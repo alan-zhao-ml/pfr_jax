@@ -60,18 +60,18 @@ flags.DEFINE_enum(
 )
 flags.DEFINE_bool(
     "emb_opt_using_c2",
-    False,
+    True,
     "Whether to allow Correction 2 to optimize the embeddings.",
 )
 flags.DEFINE_bool(
     "mlp_opt_using_c2",
-    False,
+    True,
     "Whether to allow Correction 2 to optimize the MLP weights. Only effective"
     " if emb_opt_using_c2 is True.",
 )
 flags.DEFINE_bool(
     "sharetau",
-    False,
+    True,
     "Whether to share tau across all features.",
 )
 flags.DEFINE_bool(
